@@ -1,6 +1,9 @@
 import Form from "../common/Form"
+import { useNavigate } from 'react-router'
 
 const Register = () => {
+    const navigate = useNavigate()
+
 
     const formItems = [
         {
@@ -38,7 +41,9 @@ const Register = () => {
         {
             title: "Already have an account?",
             style: "",
-            action: () => {}
+            action: () => {
+                navigate("/login")
+            }
         },
     ]
 
