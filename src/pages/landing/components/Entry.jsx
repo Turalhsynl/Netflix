@@ -6,7 +6,10 @@ const Entry = () => {
             <div className='flex justify-between px-[18rem] py-[28px]'>
                 <img className='w-[150px] h-[50px]' src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="netflixLogo" />
                 <div>
-                    <button className='w-[75px] h-[35px] mr-5'>Language</button>
+                    <select className='w-[75px] h-[35px] mr-5'>
+                        <option value="">English</option>
+                        <option value="">Russian</option>
+                    </select>
                     <button className='w-[75px] h-[35px] bg-[#e50914] rounded-[5px]'>Sign In</button>
                 </div>
             </div>
