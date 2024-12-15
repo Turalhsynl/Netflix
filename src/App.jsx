@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import Login from './Login/Login'
-import Register from './Register/Register'
-import Homepage from './Homepage/Homepage'
 import { BrowserRouter, Routes, Route } from "react-router";
 
 function App() {
@@ -11,9 +8,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          
         </Routes>
       </BrowserRouter>
     </>
