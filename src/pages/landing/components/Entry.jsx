@@ -6,8 +6,8 @@ const Entry = () => {
             <div className='flex justify-between px-[18rem] py-[28px]'>
                 <img className='w-[150px] h-[50px]' src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="netflixLogo" />
                 <div>
-                    <select className='w-[75px] h-[35px] mr-5'>
-                        <option value="">English</option>
+                    <select className='w-[90px] h-[35px] mr-5 bg-black/60 border rounded-[5px]'>
+                        <option value="" selected>English</option>
                         <option value="">Russian</option>
                     </select>
                     <button className='w-[75px] h-[35px] bg-[#e50914] rounded-[5px]'>Sign In</button>
@@ -24,7 +24,7 @@ const Entry = () => {
                     Ready to watch? Enter your email to create or restart your membership.
                 </p>
                 <div className='flex gap-2'>
-                    <input className='bg-black/60 border w-[366px] h-[56px] p-4 rounded-[5px]' type="text" placeholder='Email address' />
+                    <input className='bg-black/60 border w-[366px] h-[56px] p-4 rounded-[5px]' type="email" placeholder='Email address' />
                     <button className='w-[213px] h-[56px] bg-[#e50914] rounded-[5px] text-[1.5rem] '>Get Started </button>
                 </div>
             </div>
