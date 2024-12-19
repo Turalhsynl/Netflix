@@ -2,16 +2,17 @@ import React from 'react'
 import Entry from './components/Entry'
 import TrendingNow from './components/TrendingNow'
 import Arch from './components/Arch'
-import MovieCard from './components/MovieCard'
+import ReasonsToJoin from './components/ReasonsToJoin'
 
 const Landing = () => {
 
 
   return (
-    <div >
+    <div className='w-screen'>
       <Entry/>
       <Arch/>
       <TrendingNow/>
+      <ReasonsToJoin/>
     </div>
   )
 }
