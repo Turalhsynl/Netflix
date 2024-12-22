@@ -31,7 +31,7 @@ const TrendingNow = () => {
     };
 
     return (
-        <div className='bg-black text-white w-full h-full min-h-screen flex px-[18rem] flex-col'>
+        <div className='bg-black text-white w-full h-full flex px-[18rem] flex-col'>
             <h1 className='text-4xl font-bold mt-[28px] '>Trending Now</h1>
             <select
                 value={option}
