@@ -20,6 +20,10 @@ const TrendingNow = () => {
         getData();
     }, [option]);
 
+    useEffect(() => {
+        document.body.style.overflow = isModalOpen ? "hidden" : "scroll"
+    }, [isModalOpen])
+
     const openModal = (item) => {
         setItem(item);
         setIsModalOpen(true);
