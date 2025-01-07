@@ -1,13 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router'
 
 const Footer = () => {
+    const Navigate = useNavigate()
     return (
         <div className='px-[18rem] text-white py-20'>
             <div className='flex justify-center items-center flex-col'>
                 <p className='text-[16px] mb-4'>Ready to watch? Enter your email to create or restart your membership.</p>
                 <div className='flex gap-2'>
                     <input className='bg-black/60 border w-[550px] h-[56px] p-4 rounded-[5px]' type="email" placeholder='Email address' />
-                    <button className='w-[230px] h-[56px] bg-[#e50914] rounded-[5px] text-[1.5rem] '>Get Started </button>
+                    <button onClick={() => {
+                        Navigate('/register')
+                    }} className='w-[230px] h-[56px] bg-[#e50914] rounded-[5px] text-[1.5rem] '>Get Started </button>
                 </div>
             </div>
             <div className='pt-20'>

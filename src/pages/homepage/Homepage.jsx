@@ -57,7 +57,7 @@ const Homepage = () => {
 
     useEffect(() => {
         getMovies()
-        getShows
+        getShows()
     }, [])
 
     return (

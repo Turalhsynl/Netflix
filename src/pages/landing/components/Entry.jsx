@@ -1,6 +1,9 @@
 import React from 'react'
+import { Navigate, useNavigate } from 'react-router'
 
 const Entry = () => {
+    const Navigate = useNavigate()
+
     return (
         <div className='text-white w-full h-full min-h-screen bg-[url("https://assets.nflxext.com/ffe/siteui/vlv3/729ce5c2-d831-436a-8c9d-f38fea0b99b3/web/AZ-en-20241209-TRIFECTA-perspective_a09d6162-5992-4ec3-a2b8-9081ca80c5b0_large.jpg")] bg-black/70 bg-blend-overlay'>
             <div className='flex justify-between px-[18rem] py-[28px]'>
@@ -10,7 +13,9 @@ const Entry = () => {
                         <option value="" selected>English</option>
                         <option value="">Russian</option>
                     </select>
-                    <button className='w-[75px] h-[35px] bg-[#e50914] rounded-[5px]'>Sign In</button>
+                    <button onClick={() => {
+                        Navigate('/login')
+                    }} className='w-[75px] h-[35px] bg-[#e50914] rounded-[5px]'>Sign In</button>
                 </div>
             </div>
             <div className='flex flex-col justify-center items-center min-h-[80vh] w-full'>
@@ -25,7 +30,9 @@ const Entry = () => {
                 </p>
                 <div className='flex gap-2'>
                     <input className='bg-black/60 border w-[366px] h-[56px] p-4 rounded-[5px]' type="email" placeholder='Email address' />
-                    <button className='w-[213px] h-[56px] bg-[#e50914] rounded-[5px] text-[1.5rem] '>Get Started </button>
+                    <button onClick={() => {
+                        Navigate('/register')
+                    }} className='w-[213px] h-[56px] bg-[#e50914] rounded-[5px] text-[1.5rem] '>Get Started </button>
                 </div>
             </div>
         </div>
