@@ -5,7 +5,6 @@ export const themeStore = create (
     persist(
         set => (
             {
-               
                 token: "",
                 addToken: (token) => set((prevState) => ({...prevState , token: token})),
             }
